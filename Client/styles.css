@@ -1,0 +1,6 @@
+div.Quote{
+    position: relative;
+}
+.Quote a{
+    position: absolute;
+}
