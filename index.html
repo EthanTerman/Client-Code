@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +13,7 @@
 </head>
 <body>
     <header>
-        <img src="images/Asset 2.svg" alt= "Rick and Brocks bricks and rocks">
+        <img src="images/Asset 2.svg" alt= "Rick and Brocks bricks and rocks" style="max-width: 100px;">
         <nav>
             <a href="About.html">About</a>
             <a href="Services.html">Services</a>
@@ -17,27 +22,50 @@
             <a href="Gallery.html">Gallery</a>
         </nav>
     </header>
-    <main>
-        <h1>You're Home</h1>
-       <div class="Quote"><img src="images/Kitchen.jpeg" alt= "Nice Kitchen">
-            <a href="Services.html">Request A Quote</a></div>
-        <h1>Employee Spotlight</h1>
-        <img src="images/Guy.png" alt="Guy">
-        <h4>Name</h4>
-        <h5>Brock Halverson</h5>
-        <h4>Position</h4>
-        <h5>Project Manager</h5>
-        <h4>Years with the Company</h4>
-        <h5>5</h5>
-        <p>Outside of work, John enjoys spending time with his
-            family and volunteering in his community. His dedication
-            to excellence extends beyond the workplace, making him
-            a valued member of both our team and the community.</p>
+    <main class="grid-container">
+        <div class="image-container-left">
+            <div class="image-with-button">
+                <img src="images/Kitchen.jpeg" alt="Kitchen">
+                <a href="Services.html" class="quote-button">Request a Quote</a>
+            </div>
+        </div>
+        <div class="text-and-image-container">
+            <img src="images/Guy.png" alt="Guy">
+            <div class="text-container">
+                <h1>Employee Spotlight</h1>
+                <h4>Name</h4>
+                <h5>Brock Halverson</h5>
+                <h4>Position</h4>
+                <h5>Project Manager</h5>
+                <h4>Years with the Company</h4>
+                <h5>5</h5>
+                <p>Outside of work, John enjoys spending time with his
+                    family and volunteering in his community. His dedication
+                    to excellence extends beyond the workplace, making him
+                    a valued member of both our team and the community.</p>
+            </div>
+        </div>
     </main>
     <footer>
-        <h1>Contact</h1>
-        <h2>651-354-8063</h2>
-        <h2>RickBrockBrickRock@gmail.com</h2>
+        <h2>Contact</h2>
+        <h3>651-354-8063</h3>
+        <h3>RickBrockBrickRock@gmail.com</h3>
     </footer>
 </body>
+<style>
+    .quote-button {
+            position: absolute;
+            bottom: 90px;
+            left: 25%;
+            transform: translateX(-50%);
+            background-color: #fccc55;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+</style>
 </html>

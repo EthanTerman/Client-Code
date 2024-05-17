@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +13,7 @@
 </head>
 <body>
     <header>
-        <img src="images/Asset 2.svg" alt= "Rick and Brocks bricks and rocks">
+        <img src="images/Asset 2.svg" alt= "Rick and Brocks bricks and rocks" style="max-width: 100px;">
         <nav>
             <a href="About.html">About</a>
             <a href="Services.html">Services</a>
@@ -17,11 +22,78 @@
             <a href="Gallery.html">Gallery</a>
         </nav>
     </header>
-
+    <h1>Gallery</h1>
+    <main>
+        <div class="img-with-text">
+            <img src="images/Kitchen.jpeg" alt="fancy kitchen">
+            <p>High-end stainless steel appliances are strategically placed to enhance workflow efficiency, while a farmhouse sink adds a touch of rustic elegance. The backsplash, made from artisanal subway tiles, adds texture and visual interest, tying together the kitchen’s cohesive look. Soft under-cabinet lighting and pendant lights above the island illuminate the space beautifully, making it as inviting as it is functional.</p>
+        </div>
+        <div class="img-with-text">
+            <img src="images/LivingRoom.jpg" alt="nice livingroom">
+            <p>Welcome to the epitome of modern elegance and comfort, meticulously crafted by Rick and Brock's Bricks and Rocks. Our latest living room renovation seamlessly blends contemporary design with timeless charm, creating a space that is both stylish and inviting.</p>
+        </div>
+        <div class="img-with-text">
+            <img src="images/Backyard.png" alt="modern backyard">
+            <p>This recently renovated backyard by Rick and Brock's Bricks and Rocks is more than just an outdoor space; it’s an extension of your home, designed for enjoyment and relaxation. Whether hosting a summer barbecue, enjoying a quiet evening by the fire, or tending to your garden, this backyard sanctuary offers endless possibilities.</p>
+        </div>
+    </main>
     <footer>
-        <h1>Contact</h1>
-        <h2>651-354-8063</h2>
-        <h2>RickBrockBrickRock@gmail.com</h2>
+        <h2>Contact</h2>
+        <h3>651-354-8063</h3>
+        <h3>RickBrockBrickRock@gmail.com</h3>
     </footer>
 </body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: dimgrey;
+}
+header {
+    background-color: #fccc55;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    max-width: 100px;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+}
+main {
+    padding: 20px;
+}
+.img-with-text {
+    display: flex;
+    margin-bottom: 20px;
+}
+.img-with-text img {
+    max-width: 300px;
+    margin-right: 20px;
+}
+.img-with-text p {
+    flex: 1;
+}
+footer {
+    background-color: #fccc55;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+footer h2 {
+    margin-bottom: 10px;
+}
+footer h3 {
+    margin-bottom: 5px;
+}
+</style>
 </html>

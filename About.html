@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +13,7 @@
 </head>
 <body>
     <header>
-        <img src="images/Asset 2.svg" alt= "Rick and Brocks bricks and rocks">
+        <img src="images/Asset 2.svg" alt= "Rick and Brocks bricks and rocks" style="max-width: 100px;">
         <nav>
             <a href="About.html">About</a>
             <a href="Services.html">Services</a>
@@ -17,28 +22,68 @@
             <a href="Gallery.html">Gallery</a>
         </nav>
     </header>
-    <main>
-        <h1>Our History</h1>
-        <p>Our history at Rick and Brock's Bricks and Rocks is a testament to our unwavering commitment to quality craftsmanship and customer satisfaction. Established in 1999, our journey began with a shared passion for transforming houses into dream homes. What started as a modest endeavor doing small side jobs for cash or just helping out friends quickly blossomed into a reputable enterprise, thanks to our dedication to excellence in every project we undertook.</p>
-        <h1>Our team</h1>
-        <h3>Brock Halverson</h3>    
-             <ul>
-                <li>Project Manager</li>
-                <li>Years with us, 5</li>
-            </ul>
-        <h3>Rick Chapek</h3>
-            <ul>
-                <li>Cheif Operations Officer</li>
-                <li>Years with us 12</li>
-            </ul>
-        <h3>Dave Stank</h3>
-            <ul>Site Supervisor</ul>
-            <ul>Years with us, 6</ul>
+    <main class="content-container">
+        <div class="grid-container">
+            <div class="our-history">
+                <h1>Our History</h1>
+                <p>Our history at Rick and Brock's Bricks and Rocks is a testament to our unwavering commitment to quality craftsmanship and customer satisfaction. Established in 1999, our journey began with a shared passion for transforming houses into dream homes. What started as a modest endeavor doing small side jobs for cash or just helping out friends quickly blossomed into a reputable enterprise, thanks to our dedication to excellence in every project we undertook.</p>
+            </div>
+            <div class="our-team">
+                <h1>Our Team</h1>
+                <h3>Brock Halverson</h3>
+                <ul>
+                    <li>Project Manager</li>
+                    <li>Years with us, 5</li>
+                </ul>
+                <h3>Rick Chapek</h3>
+                <ul>
+                    <li>Chief Operations Officer</li>
+                    <li>Years with us, 12</li>
+                </ul>
+                <h3>Dave Stank</h3>
+                <ul>
+                    <li>Site Supervisor</li>
+                    <li>Years with us, 6</li>
+                </ul>
+            </div>
+        </div>
     </main>
     <footer>
-        <h1>Contact</h1>
-        <h2>651-354-8063</h2>
-        <h2>RickBrockBrickRock@gmail.com</h2>
+        <h2>Contact</h2>
+        <h3>651-354-8063</h3>
+        <h3>RickBrockBrickRock@gmail.com</h3>
     </footer>
 </body>
+<style>
+.content-container {
+    display: flex;
+    justify-content: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.our-history {
+    padding: 20px;
+    background-color: dimgray;
+}
+.our-team {
+    padding: 20px;
+    background-color: dimgray;
+    text-align: right;
+}
+h1 {
+    color: #fccc55;
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    margin-bottom: 5px;
+}
+    </style>
 </html>
+

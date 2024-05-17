@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+<link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +13,7 @@
 </head>
 <body>
     <header>
-        <img src="images/Asset 2.svg" alt= "Rick and Brocks bricks and rocks">
+        <img src="images/Asset 2.svg" alt= "Rick and Brocks bricks and rocks" style="max-width: 100px;">
         <nav>
             <a href="About.html">About</a>
             <a href="Services.html">Services</a>
@@ -17,15 +22,130 @@
             <a href="Gallery.html">Gallery</a>
         </nav>
     </header>
-
-
-
-
-
+    <main>
+        <h1>Shop</h1>
+        <ul>
+            <li>
+                <h2>Bricks and Stones:</h2>
+                <ul>
+                    <li>Bricks (clay, concrete, decorative): $0.50 - $1.50 per brick</li>
+                    <li>Natural stones (granite, marble, limestone, slate): $5 - $20 per square foot</li>
+                </ul>
+            </li>
+            <li>
+                <h2>Flooring and Tiles:</h2>
+                <ul>
+                    <li>Ceramic tiles: $2 - $5 per square foot</li>
+                    <li>Porcelain tiles: $3 - $10 per square foot</li>
+                    <li>Natural stone tiles (e.g., marble, travertine): $6 - $15+ per square foot</li>
+                    <li>Hardwood flooring: $5 - $15+ per square foot</li>
+                    <li>Laminate flooring: $2 - $6 per square foot</li>
+                    <li>Vinyl flooring: $1 - $5 per square foot</li>
+                </ul>
+            </li>
+            <li>
+                <h2>Countertops:</h2>
+                <ul>
+                    <li>Granite countertops: $50 - $100+ per square foot</li>
+                    <li>Quartz countertops: $60 - $150+ per square foot</li>
+                    <li>Solid surface countertops: $50 - $100 per square foot</li>
+                    <li>Laminate countertops: $10 - $40 per square foot</li>
+                    <li>Epoxy poured countertops: $20 - $30 per square foot</li>
+                </ul>
+            </li>
+            <li>
+                <h2>Siding and Roofing:</h2>
+                <ul>
+                    <li>Vinyl siding: $3 - $7 per square foot</li>
+                    <li>Fiber cement siding: $5 - $10 per square foot</li>
+                    <li>Wood siding: $6 - $12+ per square foot</li>
+                    <li>Stone veneer siding: $8 - $20+ per square foot</li>
+                    <li>Asphalt shingles: $80 - $120 per square (100 square feet)</li>
+                    <li>Metal roofing panels: $5 - $12+ per square foot</li>
+                    <li>Clay or concrete tiles: $10 - $20+ per square foot</li>
+                    <li>Cedar shakes: $8 - $15+ per square foot</li>
+                </ul>
+            </li>
+            <li>
+                <h2>Landscaping Materials:</h2>
+                <ul>
+                    <li>Pavers: $3 - $10 per square foot</li>
+                    <li>Gravel: $30 - $60 per cubic yard</li>
+                    <li>Mulch: $20 - $50 per cubic yard</li>
+                    <li>Decorative stones: $5 - $15 per square foot</li>
+                    <li>Plant and tree selections: Varies by species and size</li>
+                    <li>Hardscape materials for outdoor projects</li>
+                </ul>
+            </li>
+            <li>
+                <h2>Paints and Stains:</h2>
+                <ul>
+                    <li>Interior paints: $30 - $60 per gallon</li>
+                    <li>Exterior paints: $40 - $70 per gallon</li>
+                    <li>Wood stains and finishes: $20 - $50 per gallon</li>
+                    <li>Primers and sealers: $20 - $40 per gallon</li>
+                    <li>Color swatches and finish options</li>
+                </ul>
+            </li>
+        </ul>        
+    </main>
     <footer>
-        <h1>Contact</h1>
-        <h2>651-354-8063</h2>
-        <h2>RickBrockBrickRock@gmail.com</h2>
+        <h2>Contact</h2>
+        <h3>651-354-8063</h3>
+        <h3>RickBrockBrickRock@gmail.com</h3>
     </footer>
 </body>
+<style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: dimgrey;
+}
+header {
+    background-color: #fccc55;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    max-width: 100px;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+}
+main {
+    padding: 20px;
+}
+h1 {
+    color: #fccc55;
+    margin-bottom: 20px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    margin-bottom: 20px;
+}
+ul ul {
+    margin-left: 20px;
+}
+footer {
+    background-color:#fccc55;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+footer h2 {
+    margin-bottom: 10px;
+}
+footer h3 {
+    margin-bottom: 5px;
+}</style>
 </html>
